@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Parte I 04</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:outputLabel value="Nota 1 " />
+            <h:inputText value="#{notasController.nota1}"/> <br />
+            <h:outputLabel value="Nota 2  " />
+            <h:inputText value="#{notasController.nota2}" /> <br />
+            <h:outputLabel value="Nota 3  " />
+            <h:inputText value="#{notasController.nota3}" /> <br />
+            <h:outputLabel value="Nota 4  " />
+            <h:inputText value="#{notasController.nota4}" /> <br />
+           <h:commandButton value="Confirmar" action="#{notasController.confirmaAction()}" /> <br/>
+           <h:outputLabel value="Média: " /> <h:outputText value="#{notasController.media}" /> <br />
+           <h:outputText value="#{notasController.resultado}" />
+           
+        </h:form>
+
+    </h:body>
+</html>
+
